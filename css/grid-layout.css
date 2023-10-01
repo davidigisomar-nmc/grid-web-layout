@@ -51,15 +51,15 @@ body {
 
 #intfact {
     background-color: rgb(84, 192, 156);
-}
+    }
 
 #webname {
     background-color:aquamarine;
-}
+    }
 
 #quote {
     background-color:white;
-}
+    }
 
 #goals, #intfact, #webname, #quote {
     box-shadow: 10px 10px black;
@@ -67,8 +67,12 @@ body {
 
 
 /* Background IMG */
-body {
+body::after {
+    content: "";
+    position: absolute;
     background-image: url(bckimg.jpg);
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+    opacity: .5;
     }
